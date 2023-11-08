@@ -1,13 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Kieran's awesome page</title>
-    </head>
-    <body>
-        <h1>Hello</h1>
-        <p>
-            I don't know what I will be doing with this site, just general
-            thoughts about programming and stuff.
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <style>
+        body {
+            display: grid;
+            grid:
+            'Title Title Title Title Title'
+            'Contact Contact Summary Summary Summary';
+        }
+        .title {
+            grid-area: Title;
+            background-color: cadetblue;
+            font-size: 36pt;
+            color: beige;
+            text-align: center;
+        }
+        .contact {
+            grid-area: Contact;
+            padding: 1em;
+            text-shadow: 3px;
+            background-color: darkseagreen;
+            >div {
+                text-align: right;
+            }
+        }
+        .summary {
+            padding: 1em;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="title">
+        <h1>KIERAN GRIFFITHS</h1>
+    </section>
+    <section class="contact">
+        <div id="mobile_phone">0435 259 191</div>
+        <div id="email">griffk04@gmail.com</div>
+        <div id="location">BALDIVIS WA, 6171</div>
+    </section>
+    <section class="summary">
+        <h2>Profession Summary</h2>
+        <p>Some text<br> more text
         </p>
-    </body>
+    </section>
+
+</body>
+
 </html>
