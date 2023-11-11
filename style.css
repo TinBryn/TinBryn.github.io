@@ -1,0 +1,28 @@
+
+
+body {
+    display: grid;
+    gap: 1em;
+    grid:
+    'Title Title Title Title Title'
+    'Contact Contact Summary Summary Summary';
+}
+.title {
+    grid-area: Title;
+    background-color: cadetblue;
+    font-size: 36pt;
+    color: beige;
+    text-align: center;
+}
+.contact {
+    grid-area: Contact;
+    padding: 1em;
+    text-shadow: 3px;
+    background-color: darkseagreen;
+    >div {
+        text-align: right;
+    }
+}
+.summary {
+    padding: 1em;
+}
