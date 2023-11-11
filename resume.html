@@ -5,23 +5,226 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        main {
+            display: grid;
+            grid-template-columns: 16em 1fr;
+        }
+
+
+        .name {
+            background-color: cadetblue;
+            color: beige;
+            text-align: center;
+            padding: 1em;
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+
+        .name>h1 {
+            font-size: 36pt;
+
+        }
+
+        .summary {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            display: flex;
+            flex-direction: column;
+            padding: 1em;
+            text-shadow: 3px;
+            background-color: darkseagreen;
+        }
+
+        .contact>ul {
+            list-style: none;
+        }
+
+        .detail {
+            grid-column-start: 2;
+            grid-column-end: 3;
+            display: flex;
+            flex-direction: column;
+            padding: 1em;
+            margin: 1em;
+        }
+
+        .experience>ul>li {
+            display: grid;
+            margin: 1em;
+            padding: 1em;
+            grid-template-columns: 2fr 1fr;
+            background-color: beige;
+        }
+
+        .education>ul>li {
+            display: grid;
+            margin: 1em;
+            padding: 1em;
+            grid-template-columns: 2fr 1fr;
+            background-color: beige;
+        }
+
+        .date {
+            text-align: right;
+            font-weight: 800;
+        }
+    </style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 
-<body class="grid-container">
-    <section class="title">
-        <h1>KIERAN GRIFFITHS</h1>
-    </section>
-    <section class="contact">
-        <div id="mobile_phone">0435 259 191</div>
-        <div id="email">griffk04@gmail.com</div>
-        <div id="location">BALDIVIS WA, 6171</div>
-    </section>
-    <section class="summary">
-        <h2>Profession Summary</h2>
-        <p>Some text<br> more text
-        </p>
-    </section>
+<body>
+    <header>
+        <!-- Programmer -->
+    </header>
+    <main>
+        <div class="name">
+            <h1>Kieran Griffiths</h1>
+        </div>
+        <div class="summary">
+            <div class="contact">
+                <h2>Contact</h2>
+                <ul>
+                    <li>
+                        <i class="material-icons">smartphone</i>
+                        0435 259 191
+                    </li>
+                    <li>
+                        <i class="material-icons">email</i>
+                        grifk04@gmail.com
+                    </li>
+                    <li>
+                        <i class="material-icons">home</i>
+                        BALDIVIS WA, 6171
+                    </li>
+                </ul>
+            </div>
+            <div class="skills">
+                <h2>Skills</h2>
+                <ul>
+                    <li>Programming Languages
+                        <ul>
+                            <li>Rust</li>
+                            <li>Java/Kotlin/Scala</li>
+                            <li>C++</li>
+                            <li>Python</li>
+                            <li>SQL</li>
+                            <li>HTML/CSS</li>
+                        </ul>
+                    </li>
+                    <li>Programming Practices
+                        <ul>
+                            <li>Test Driven Development</li>
+                            <li>Refactoring</li>
+                            <li>Data normalisation</li>
+                        </ul>
+                    </li>
+                    <li>Business software
+                        <ul>
+                            <li>Word</li>
+                            <li>Excel</li>
+                            <li>Powerpoint</li>
+                        </ul>
+                    </li>
+
+                    <li>Customer Service</li>
+                    <li>Queue flow and management</li>
+                    <li>Project Management</li>
+                    <li>Schedule Planning</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="detail">
+            <div class="about">
+                <h2>Professional Summary</h2>
+
+                <p>I have experience in customer service where I strive to help customers get what they need to
+                    the best of my ability. I also understand when I&#39;m not sure about something and take the
+                    time to check that I&#39;m giving accurate information.</p>
+
+                <p>I&#39;m interested in developing my collaboration skills, being able to discuss a problem with a
+                    college in a challenging, yet respectful manner. I&#39;m also willing to challenge existing
+                    conventions, most of the time I discover a good reason to follow them, but sometimes it can
+                    lead to new and interesting outcomes.</p>
+
+                <p>I intend to move my career in the direction of software development and looking into courses
+                    and experience in doing so. I feel like this area can make use of my technical and soft skills.</p>
+            </div>
+            <div class="experience">
+                <h2>Work History</h2>
+                <ul>
+                    <li>
+                        <div>
+                            <strong>Electoral Officer</strong><br>
+                            <em>Australian Electoral Commission</em><br>
+                        </div>
+                        <div class="date">Referendum 2023</div>
+                    </li>
+
+                    <li>
+                        <div>
+                            <strong>Electoral Officer</strong><br>
+                            <em>Australian Electoral Commission</em><br>
+                        </div>
+                        <div class="date">Election 2022</div>
+                    </li>
+
+                    <li>
+                        <div>
+                            <strong>Shop Assistant</strong><br>
+                            <em>Uniprint (University of Western Australia)</em><br>
+                        </div>
+                        <div class="date">2019 - 2020</div>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="education">
+                <h2>Education</h2>
+                <ul>
+                    <li>
+                        <div>
+                            <strong>Introduction to Digital Workplace Administration Skillset</strong><br>
+                            <em>South Metro TAFE Rockingham</em><br>
+                        </div>
+                        <div class="date">2023 (Current)</div>
+                    </li>
+                    <li>
+                        <div>
+                            <strong>Bachelor of Computer Science (uncompleted)</strong><br>
+                            <em>University of Western Australia</em><br>
+                        </div>
+                        <div class="date">2016-2021</div>
+                    </li>
+                    <li>
+                        <div>
+                            <strong>Bachelor of Engineering (uncompleted)</strong><br>
+                            <em>University of Western Australia</em><br>
+                        </div>
+                        <div class="date">2010-2016</div>
+                    </li>
+                    <li>
+                        <div>
+                            <strong>Senior Secondary Certificate of Education</strong><br>
+                            <em>Collie Senior High School</em><br>
+                        </div>
+                        <div class="date">2008</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="referees">
+                <h2>Referees</h2>
+                <ul>
+                    <li>
+                        <strong>Htay Nyunt - Trainer</strong><br>
+                        <em>South Metro TAFE Rockingham</em>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
 
 </body>
 
